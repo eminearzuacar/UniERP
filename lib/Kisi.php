@@ -3,14 +3,14 @@
 class Kisi {
     public $isim;
     public $soyisim;
-    public $doğumTarihi; //sadece yil
+    public $dogumTarihi; //sadece yil
     public $baslangicYili;
     
-    public function gtuUzunIsim() {
-        return $this->isim. '' . $this->soyisim;
+    public function getirUzunIsim() {
+        return $this->isim. ' ' . $this->soyisim;
     }
     
     public function getYas() {
-        return date('Y') - $this->doğumTarihi;
+        return date('Y') - $this->dogumTarihi;
     }
 }
